@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scorekeeper</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="title">Scorekeeper</div>
+      <div class="box">
+        <div class="playground">
+          <div class="p1 disp p1score">0</div>
+          <div class="p2 disp p2score">0</div>
+        </div>
+        <div class="mlength">
+          <fieldset>
+            <legend><label for="length"> Match Length : </label></legend>
+            <select name="length" id="length" autocomplete="off">
+              <option value="--">--</option>
+              <option value="3">3</option>
+              <option value="5">5</option>
+              <option value="7">7</option>
+            </select>
+          </fieldset>
+        </div>
+        <div class="buttons">
+          <button class="p1 butt player1" disabled>+1 Red Team</button
+          ><button class="reset butt">Reset</button
+          ><button class="p2 butt player2" disabled>+1 Green Team</button>
+        </div>
+      </div>
+    </main>
+    <script src="scorekeeper.js"></script>
+  </body>
+</html>
